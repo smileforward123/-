@@ -134,7 +134,7 @@ export default {
     },
     warn(){
       Toast({
-        message: '您尚未选择筛选条件！',
+        message: '您尚未选择完整的筛选条件！',
         position: 'bottom',
         duration: 5000
       });
@@ -267,7 +267,7 @@ export default {
   padding-left:1.52rem;
   width:1.2rem;
   height:1.2rem;
-  background:url(../../static/img/tel.png) no-repeat;
+  background:url(../../static/img/telLogo.png) no-repeat;
   background-size:contain;
 }
 .list  .time{

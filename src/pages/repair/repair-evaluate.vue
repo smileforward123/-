@@ -29,7 +29,9 @@
         <mt-tab-container v-model='selected' >
           <mt-tab-container-item id="1">
             <div class='evaluateBox'>
-              评分：
+              <template>
+                    <score  @toscore="setscore"></score>
+              </template>
             </div>
             <div class='addImgBox'>
               <mt-field  placeholder="期待您的评价..." type="textarea" rows="5"></mt-field>
@@ -64,13 +66,24 @@
 
 <script>
 import { Navbar, TabItem } from 'mint-ui';
+import score from "vue-score"
+import "vue-score/dist/vue-score.css"
+
 export default {
   name:'repairEvaluate',
   data(){
    return {
-     selected:"1"
+     selected:"1",
+      parameter:{},
+      
    }
-  }
+  },
+  methods:{
+      setscore(arr){
+        this.parameter[arr[0]] = arr[1]
+      }
+  },
+  components:{score}
  
   
 }
@@ -80,7 +93,6 @@ export default {
 .evaluateBox{
   padding-left:1.36rem;
   font-size:1.2rem;
-  height:3rem;
   line-height:3rem;
   background:#fff;
   margin-top:1rem;

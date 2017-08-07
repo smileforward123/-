@@ -24,55 +24,94 @@
           
         </div>
         <div class='progressBox clear'>
-          <div class='left'></div>
-          <ul class='right'>
-            <li>
-              <h3 class='detail'>待确认，服务已由[天津卓越新中新新一阳工程师、刘工程师]执行完成</h3>
-              <p class='detail'>
-                <span class='title'>执行描述：</span>  充值机无法充值问题已经解决，是由于后台服务造成的
-              </p>
-              <div class='imgBox clear'>
-                <div></div><div></div><div></div>
+          
+          <ul class='list'>
+            <li class='clear'>
+              <div class='right'>
+                <span class='statusLogo active'></span>
+                <div class='statusDetail'>
+                  <h3 class='detail progress'>
+                  待确认，服务已由[天津卓越新中新新一阳工程师、刘工程师]执行完成</h3>
+                  <p class='detail'>
+                    <span class='title'>执行描述：</span>  充值机无法充值问题已经解决，是由于后台服务造成的
+                  </p>
+                  <div class='imgBox clear'>
+                    <div></div><div></div><div></div>
+                  </div>
+                  <p class='detail'>操作者：杨工程师</p>
+                  <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+                </div>
               </div>
-              <p class='detail'>操作者：杨工程师</p>
-              <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
             </li>
-            <li>
-              <h3 class='detail'>执行中，服务已由[天津卓越新中新新一阳工程师、刘工程师]正在执行</h3>
-              <p class='detail'>
-                <span class='title'>未解决描述：</span>  充值机无法充值问题已经解决，是由于后台服务造成的
-              </p>
-              <div class='imgBox clear'>
-                <div></div><div></div><div></div>
+            <li class='clear'>
+              
+              
+              <div class='right'>
+                <span class='statusLogo'></span>
+                <div class='statusDetail'>
+                  <h3 class='detail'>执行中，服务已由[天津卓越新中新新一阳工程师、刘工程师]正在执行</h3>
+                  <p class='detail'>
+                    <span class='title'>未解决描述：</span>  充值机无法充值问题已经解决，是由于后台服务造成的
+                  </p>
+                  <div class='imgBox clear'>
+                    <div></div><div></div><div></div>
+                  </div>
+                  <p class='detail'>操作者：杨工程师</p>
+                  <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+                </div>
               </div>
-              <p class='detail'>操作者：杨工程师</p>
-              <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
             </li>
-            <li>
-              <h3 class='detail'>执行中，服务已由[天津卓越新中新新一阳工程师、刘工程师]正在执行</h3>
-              <p class='detail'>操作者：杨工程师</p>
-              <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+            <li class='clear'>
+              <div class='right'>
+                <span class='statusLogo'></span>
+                <div class='statusDetail'>
+                  <h3 class='detail'>执行中，服务已由[天津卓越新中新新一阳工程师、刘工程师]正在执行</h3>
+                  <p class='detail'>操作者：杨工程师</p>
+                  <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+                </div>
+              </div>
+              
             </li>
-            <li>
-              <p class='detail'><span>补充说明：</span>充值机无法充值可能是由于验钞机无法识别的缘故</p>
-              <p class='detail'>操作者：杨工程师</p>
-              <p class='detail'>
-                <span class='timeIcon'></span>
-                <time>2017-07-07 15:58</time>
-              </p>
+            <li  class='clear'>
+              <div class='right'>
+                <span class='statusLogo'></span>
+                <div class='statusDetail'>
+                  <p class='detail'><span>补充说明：</span>充值机无法充值可能是由于验钞机无法识别的缘故</p>
+                  <p class='detail'>操作者：杨工程师</p>
+                  <p class='detail'>
+                    <span class='timeIcon'></span>
+                    <time>2017-07-07 15:58</time>
+                  </p>
+                </div>
+              </div>
+              
             </li>
-            <li>
-              <h3 class='detail'>已分配，服务已由分配给[天津卓越新中新新一阳工程师、刘工程师]</h3>
-             
-              <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+            <li class='clear'>
+             <div class='right'>
+                <span class='statusLogo'></span>
+                <div class='statusDetail'>
+                  <h3 class='detail'>已分配，服务已由分配给[天津卓越新中新新一阳工程师、刘工程师]</h3>
+                 <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+                </div>
+              </div>
             </li>
-            <li>
-              <h3 class='detail'>已受理，服务已由[天津卓越新中新新一阳工程师、刘工程师]受理完成</h3>
-              <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+            <li class='clear'>
+             <div class='right'>
+                <span class='statusLogo'></span>
+                <div class='statusDetail'>
+                  <h3 class='detail'>已受理，服务已由[天津卓越新中新新一阳工程师、刘工程师]受理完成</h3>
+                  <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+                </div>
+              </div>
             </li>
-            <li>
-              <h3 class='detail'>已申请，服务已由[天津卓越新中新新一阳工程师、刘工程师]正在执行</h3>
-              <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+            <li  class='clear'>
+              <div class='right'>
+                <span class='statusLogo'></span>
+                <div class='statusDetail'>
+                  <h3 class='detail'>已申请，服务已由[天津卓越新中新新一阳工程师、刘工程师]正在执行</h3>
+                  <p class='detail'><span class='timeIcon'></span><time>2017-07-07 15:58</time></p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -181,13 +220,44 @@ export default {
 .progressBox .right{
   float:right;
 }
-.right li{
-  border-bottom:1px solid #e4e4e4;
+.list li{
+ 
+  border-left: 1px dashed #dddddd;
+  /*padding-left: 2.96rem;
+  padding-top: 0.8rem;*/
+  position:relative;
+
 }
-.right li .detail{
+.list  .statusLogo.active{
+  display:inline-block;
+  width:1rem;
+  height:1rem;
+  background:url(../../../static/img/active.png) no-repeat;
+  background-size:contain;
+  position:absolute;
+  left:-0.5rem;
+  top:0;
+}
+.list  .statusLogo{
+  display:inline-block;
+  width:1rem;
+  height:1rem;
+  background:#c5c5c5;
+  border-radius:50%;
+  position:absolute;
+  left:-0.5rem;
+  top:0;
+}
+.list .statusDetail{
+  margin-left:0.6rem;
+   border-bottom:1px solid #e4e4e4;
+   padding-bottom:0.8rem;
+}
+.list li .detail{
   font-size:1.08rem;
   line-height:1.6rem;
   color:#8e8e8e;
+ 
 }
 .imgBox div{
   width:6rem;

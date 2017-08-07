@@ -188,11 +188,8 @@ export default {
   border-right:1px solid #c7c7c7;
   border-bottom:1px solid #c7c7c7;
   text-align:center;
- 
   box-sizing:border-box;
-
-
- // margin: 0.6rem 0;
+// margin: 0.6rem 0;
 
 }
 .option .active{
@@ -203,7 +200,7 @@ export default {
     height:3.69rem;
     background:#fff;
     color:#393939;
-    margin-top:0.48rem;
+    /*margin-top:0.48rem;*/
     border-top:1px solid #f1f1f1;
     width:50%;
 
@@ -211,7 +208,7 @@ export default {
 .confirm{
   width:50%;
   height:3.69rem;
-  margin-top:0.48rem;
+  /*margin-top:0.48rem;*/
   border-top:1px solid #f1f1f1;
   background:#f59549;
 }

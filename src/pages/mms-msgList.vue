@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id='contentBox'>
+        <div id='contentBox' class='page-infinite-wrapper'>
           <ul class='list'
             v-infinite-scroll="loadMore"
             infinite-scroll-disabled="loading"
@@ -15,10 +15,10 @@
             </li>
            
           </ul>
-          <div class='loadBox' v-show='loading'>
+          <p class='loadBox page-infinite-loading' >
             <mt-spinner type="fading-circle"></mt-spinner>
             加载中...
-          </div>
+          </p>
           
         </div>
        <footerNav></footerNav>
@@ -28,7 +28,9 @@
 
 <script>
 import  footerNav from '../components/mt-footer'
+import { InfiniteScroll } from 'mint-ui';
 import { MessageBox } from 'mint-ui';
+import { Spinner } from 'mint-ui';
 export default {
   name: 'msg',
   components:{
@@ -70,7 +72,7 @@ export default {
       this.loading = true;
       setTimeout(() => {
         let last = this.list[this.list.length - 1];
-        //console.log(last);
+       // console.log(last);
         for (let i = 1; i <= 3; i++) {
           this.list.push(last + i);
         }
@@ -88,6 +90,7 @@ export default {
    background:#f6f6f6;
   width:100%;
   box-sizing:border-box;
+  overflow:scroll;
   
 }
 .list{

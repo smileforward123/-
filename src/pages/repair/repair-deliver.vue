@@ -27,13 +27,13 @@
             <span class='arrow'></span></h3>
             <ul class='buildList' v-show='nowIndex==index' 
             >
-              <li v-for='(item,index) in regionList.nameList' 
+              <li v-for='(itemOption,index) in item.nameList' 
               @click='addClassLi(index)' 
-              :class="{activeLi:nowIndexLi==index}">{{item.name}}<span class='right'></span></li>
+              :class="{activeLi:nowIndexLi==index}">{{itemOption.name}}<span class='right'></span></li>
             </ul>
         </div>
         <div class='btnBox'>
-          <mt-button type="primary" class='ok'>转交</mt-button>
+          <mt-button type="primary" class='ok' @click='deliver'>转交</mt-button>
           </mt-popup>
         </div>
 
@@ -72,6 +72,7 @@ export default {
      ],
      nowIndex:0,
      nowIndexLi:0,
+     choosedName:''
     
    }
   },
@@ -81,6 +82,11 @@ export default {
     },
     addClassLi(index){
     this.nowIndexLi=index;
+    },
+    deliver(){
+      console.log(this.regionList[this.nowIndex].nameList[this.nowIndexLi]);
+      this.choosedName=this.regionList[this.nowIndex].nameList[this.nowIndexLi];
+      console.log(this.choosedName);
     }
   }
   
