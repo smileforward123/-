@@ -4,16 +4,17 @@
           <ul class='list'>
             <li class='clear name'>
             <span class='icon'></span><span>姓名</span>
-            <strong class='right'>刘老师</strong>
+            <strong class='right' v-cloak>{{data.name}}</strong>
             </li>
             <li class='clear tel'>
-            <span class='icon'></span><span>手机号</span><strong class='right'>15011234567</strong>
+            <span class='icon'></span><span>手机号</span><strong class='right'
+            v-cloak>{{data.phone_no}}</strong>
             </li>
             <li class='clear college'>
-            <span class='icon'></span><span>院校</span><strong class='right'>北京新中新</strong>
+            <span class='icon'></span><span>院校</span><strong class='right' v-cloak>{{data.org_name}}</strong>
             </li>
             <li class='clear status'>
-            <span class='icon'></span><span>身份</span><strong class='right'>申请者 执行者 管理者</strong>
+            <span class='icon'></span><span>身份</span><strong class='right'v-cloak  v-if='data.identity_type==0'>未指定</strong><strong class='right'v-cloak  v-if='data.identity_type==1'>客户</strong><strong class='right'v-cloak  v-if='data.identity_type==2'>运维</strong><strong class='right'v-cloak  v-if='data.identity_type==4'>管理员</strong>
             </li>
             <li class='clear category'>
             <span class='icon'></span>
@@ -44,18 +45,46 @@ export default {
   components:{
     footerNav
   },
+  data(){
+    return {
+      data:{
+
+      }
+    };
+  },
+  mounted:function(){
+     var that=this;
+    this.$http.post('http://172.16.15.75:50600/api/c_user_query/by_id',{
+       
+        user_id:"5987cd0499f69944485e8ff7"
+       
+    }).then(function(res){
+        console.log(res.data) ;
+       that.data=res.data.data;
+       console.log(that.data);
+
+    }).catch(function(res){
+      console.log(res);
+    });
+    
+  },
   methods:{
     quit(){
       MessageBox({
         message: '您确定要退出吗?',
         showCancelButton: true
       });
-    }
+    },
+    
+
   } 
 }
 </script>
 
 <style scoped>
+[v-cloak] {
+  display: none;
+}
 
 #contentBox{
   background:#f6f6f6;
